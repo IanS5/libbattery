@@ -30,10 +30,10 @@ struct battery_info {
 };
 
 
-struct battery *battery_init(void);
-double battery_fraction(struct battery *b);
+extern struct battery *battery_init(void);
+extern double battery_fraction(struct battery *b);
 
-bool battery_fill_info(struct battery_info *i);
-void battery_dump(struct battery_info *i);
+extern bool battery_fill_info(struct battery_info *i);
+extern void battery_dump(struct battery_info *i);
 
 
